@@ -6,11 +6,12 @@ import Price from './Components/Price';
 import Image from './Components/Image';
 import Description from './Components/Description';
 
-
+//import boostrap 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import product from './product'
 
+
+// set firstname variable
 let firstName = 'Lord'
 function App() {
   return (
@@ -18,21 +19,24 @@ function App() {
     <div data-bs-theme="dark">
     <Card style={{ width: '18rem' }}>
       <Card.Body>
+        {/* display image */}
         <Image></Image>
         <Card.Title>  <Name></Name>  </Card.Title>
         <Card.Text>
-
+{/* display price */}
           <Price></Price>
 
           <br/>
 
           
-          
+          {/* display description */}
           <Description></Description>
         </Card.Text>
       </Card.Body>
     </Card>
 
+
+{/* display firstname */}
         <h3>Hello, {firstName}!</h3>
 
 </div>
